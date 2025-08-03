@@ -64,3 +64,24 @@
 # for k, v in lst:
 #     group[k].append(v)
 # print(dict(group))
+
+# ----------------------------------------------------------------------
+# from functools import lru_cache
+# import time
+# for i in range(10):
+#     @lru_cache(maxsize=2)
+#     def fun(a,b):
+#         time.sleep(3)
+#         return a + b
+#     print(fun(1, 2))
+# ----------------------------------OR------------------------------------
+
+# @lru_cache(maxsize=100)
+# def feb(n):
+#     if n < 2:
+#         return n
+#     else:
+#         return feb(n-1) + feb(n-2)
+# print(feb(30))
+
+# ----------------------------------------------------------------------
