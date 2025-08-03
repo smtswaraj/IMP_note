@@ -1,10 +1,10 @@
-# from pathlib import Path
+from pathlib import Path
 
-# file = Path("Sample.txt")
-# if file.exists():
-#     print(file.read_text())
-# else:
-#     file.write_text("Hello, World!")
+file = Path("./files/Sample.txt")
+if file.exists():
+    print(file.read_text())
+else:
+    file.write_text("Hello, World!")
 # ------------------------------------------------------------------
 
 # from functools import singledispatch
